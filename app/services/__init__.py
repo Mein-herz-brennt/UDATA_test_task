@@ -1,1 +1,3 @@
-from app.services import lot_service, bid_service
+from app.services.lot_service import LotService
+from app.services.bid_service import BidService
+

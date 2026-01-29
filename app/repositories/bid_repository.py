@@ -1,8 +1,8 @@
 from typing import Optional, List
 from sqlalchemy import select, desc
 from sqlalchemy.ext.asyncio import AsyncSession
-from app.repositories.base import BaseRepository
-from app.models.bid import Bid
+from app.repositories.base_repository import BaseRepository
+from app.models.bid_model import Bid
 
 
 class BidRepository(BaseRepository[Bid]):

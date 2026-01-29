@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Optional, List
 from pydantic import BaseModel, Field, ConfigDict
-from app.schemas.bid import BidResponse
+from app.schemas.bid_schema import BidResponse
 
 
 class LotBase(BaseModel):

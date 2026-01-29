@@ -2,7 +2,7 @@ from typing import Generic, TypeVar, Type, Optional, List
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.exc import SQLAlchemyError
-from app.models.base import Base
+from app.models.base_model import Base
 import logging
 
 logger = logging.getLogger(__name__)
@@ -31,6 +31,7 @@ class BaseRepository(Generic[ModelType]):
         self.db.add(instance)
         try:
             await self.db.commit()
+            await self.db.refresh(instance)
         except SQLAlchemyError as e:
             logger.error(e)
             await self.db.rollback()

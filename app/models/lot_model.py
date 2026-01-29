@@ -2,7 +2,7 @@ from datetime import datetime
 from sqlalchemy import Integer, String, Float, DateTime, Enum as SQLEnum
 from sqlalchemy.orm import relationship, Mapped, mapped_column
 import enum
-from app.models.base import Base
+from app.models.base_model import Base
 
 
 class LotStatus(str, enum.Enum):

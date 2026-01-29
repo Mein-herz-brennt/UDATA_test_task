@@ -1,4 +1,4 @@
-from app.models.base import Base
+from app.models.base_model import Base
 from datetime import datetime
 from sqlalchemy import Integer, String, Float, DateTime, ForeignKey, Enum as SQLEnum
 from sqlalchemy.orm import relationship, Mapped, mapped_column

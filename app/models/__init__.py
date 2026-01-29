@@ -1,3 +1,3 @@
-from app.models.base import Base
-from app.models.bid import Bid
-from app.models.lot import Lot, LotStatus
+from app.models.base_model import Base
+from app.models.bid_model import Bid
+from app.models.lot_model import Lot, LotStatus

@@ -5,7 +5,7 @@ from sqlalchemy.ext.asyncio import async_engine_from_config
 from decouple import config as decouple_config
 
 from alembic import context
-from app.models.base import Base
+from app.models.base_model import Base
 from app.models import Lot, Bid
 
 
